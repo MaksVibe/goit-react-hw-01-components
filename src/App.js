@@ -1,5 +1,11 @@
+import MainPage from "./components/MainPage/MainPage.jsx";
+
 const App = () => {
-  return <h1>Hi</h1>;
+  return (
+    <>
+      <MainPage />
+    </>
+  );
 };
 
 export default App;
