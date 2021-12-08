@@ -1,0 +1,43 @@
+.Friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin: 0 auto 40px auto;
+  width: 100%;
+  max-width: 280px;
+}
+
+.Friend-list .Friend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+
+  background-color: var(--white);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(60, 60, 60, 0.3);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(60, 60, 60, 0.3);
+  box-shadow: 0px 3px 3px 0px rgba(60, 60, 60, 0.3);
+}
+
+.Status {
+  margin: auto 0;
+  border-radius: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.Status::after {
+  content: "";
+  display: inline-block;
+}
+
+.Friend .Avatar {
+  display: block;
+  width: 100%;
+  max-width: 60px;
+
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+}

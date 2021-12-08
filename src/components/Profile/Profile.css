@@ -1,0 +1,67 @@
+.Profile {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 280px;
+  max-height: 600px;
+
+  text-align: center;
+  overflow: hidden;
+
+  border-radius: 4px;
+  background-color: var(--white);
+
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(60, 60, 60, 0.1);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(60, 60, 60, 0.1);
+  box-shadow: 0px 0px 8px 1px rgba(60, 60, 60, 0.1);
+}
+
+.Profile .Avatar {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  max-width: 80px;
+  border-radius: 50%;
+}
+
+.Description {
+  padding: 30px 0;
+}
+
+.Name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Tag {
+  margin-bottom: 10px;
+}
+
+.Label {
+  font-size: 12px;
+}
+
+.Description .Tag,
+.Description .Location,
+.Statistics-list .Label {
+  color: var(--secondary-text-color);
+}
+
+.Statistics-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Stat-item {
+  padding: 10px 0;
+  background-color: var(--secondary-bg-color);
+  border-top: 1px solid var(--main-bg-color);
+}
+
+.Stat-item:nth-child(-n + 2) {
+  border-right: 1px solid var(--main-bg-color);
+}
+
+.Quantity {
+  font-weight: 600;
+}

@@ -1,21 +1,34 @@
 import PropTypes from "prop-types";
+import "./Statistics.css";
 
 const Statistics = (data) => {
   const { title, stats } = data;
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul className="stat-list">
+    <section className="Statistics">
+      <h3 className="Title">{title}</h3>
+      <ul className="Stat-list">
         {stats.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}</span>
+          <li className="Statistics-Item" key={id}>
+            <span className="Label">{label}</span>
+            <br />
+            <span className="Percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
     </section>
   );
 };
+
+setTimeout(() => {
+  const items = document.querySelectorAll(".Statistics-Item");
+  for (const item of items) {
+    const color1 = Math.floor(Math.random() * 220) + 1;
+    const color2 = Math.floor(Math.random() * 220) + 1;
+    const color3 = Math.floor(Math.random() * 220) + 1;
+    const color = "rgb(" + color1 + "," + color2 + "," + color3 + ")";
+    item.style.backgroundColor = `${color}`;
+  }
+}, null);
 
 Statistics.propTypes = {
   title: PropTypes.string,
