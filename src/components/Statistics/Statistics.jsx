@@ -5,7 +5,7 @@ const Statistics = (data) => {
   const { title, stats } = data;
   return (
     <section className="Statistics">
-      {title && <h3>{title}</h3>}
+      {title && <h3 className="Title">{title}</h3>}
       <ul className="Stat-list">
         {stats.map(({ id, label, percentage }) => (
           <li className="Statistics-Item" key={id}>
